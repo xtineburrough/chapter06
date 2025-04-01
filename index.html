@@ -1,16 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Website Template</title>
-	<link rel="stylesheet" href="./assets/css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chapter 6 Haiku</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <style>
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        margin: 1rem;
+       
+        background: url("assets/img/flames.gif");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: black;
+        color: whitesmoke;
+        font-size: 5rem;
+        overflow: hidden;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      }
+      .last {
+        padding-bottom: 2rem;
+        border-bottom: 2px solid rgb(220, 200, 180);
+        margin: 15% 4rem 0 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div>A</div>
+      <div>radiant</div>
+      <div class="last">young</div>
+      <div>woman</div>
+      <div>to</div>
+      <div>light</div>
+      <div>the</div>
+      <div class="last">darkest</div>
+      <div>corners</div>
+      <div>of</div>
+      <div class="last">winter</div>
+    </div>
 
-	<h1>Website Template</h1>
-	<p>Fork and use this template repo (a.k.a. "boilerplate") for any web project</p>
-	<img src="assets/img/cat.jpg" alt="" style="max-width: 32rem;">
-
-	<script src="./assets/js/main.js"></script>
-</body>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
